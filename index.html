@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Drawing</title>
+</head>
+<body>
+    <svg width="500" height="500">
+        <!-- Head (circle) -->
+        <circle cx="250" cy="250" r="100" stroke="yellow" stroke-width="4" fill="yellow"/>
+    
+        <!-- Left lense (rounded rectangle) -->
+        <rect x="175" y="210" rx="20" ry="20" width="60" height="50"
+        style="fill: black; stroke: black; stroke-width: 5;"/>
+        
+        <!-- Right lense (rounded rectangle) -->
+        <rect x="265" y="210" rx="20" ry="20" width="60" height="50"
+        style="fill: black; stroke: black; stroke-width: 5;"/>
+
+        <!-- Nose bridge (rectangle) -->
+        <rect x="230" y="220" width="40" height="10" style="fill: black; stroke-width: 7; stroke: black"/>
+
+        <!-- Glasses left side (rectangle) -->
+        <rect x="83" y="265" width="25" height="10" transform="rotate(-15)" style="fill: black; stroke-width: 3; stroke: black"/>
+
+        <!-- Glasses right side (rectangle) -->
+        <rect x="373" y="133" width="25" height="10" transform="rotate(15)" style="fill: black; stroke-width: 3; stroke: black"/>
+
+        <!-- Mouth (half circle) -->
+        <path d="M200,285 a1.3,1 0 0,0 100,0" fill="white" style="stroke-width: 4; stroke: rgb(238, 212, 125)"/>
+
+        <!-- Teeth across (line) -->
+        <line x1="198" y1="285" x2="302" y2="285" style="stroke: rgb(238, 212, 125); stroke-width: 4" />
+
+        <!-- Teeth across (line) -->
+        <line x1="205" y1="300" x2="295" y2="300" style="stroke: black; stroke-width: 2" />
+    </svg>
+</body>
+</html>
